@@ -10,7 +10,8 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text("Hello, World!")
+        SignInAppleButton()
+            .frame(width: 200, height: 40)
     }
 }
 
