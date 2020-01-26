@@ -26,6 +26,7 @@
 		FD57681123DBCDED00908EF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD57681423DBCDEE00908EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD57681623DBCDEE00908EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInAppleExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		FD57680423DBCDEC00908EF7 /* SignInAppleExample */ = {
 			isa = PBXGroup;
 			children = (
+				FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */,
 				FD57680523DBCDEC00908EF7 /* AppDelegate.swift */,
 				FD57680723DBCDEC00908EF7 /* SceneDelegate.swift */,
 				FD57680C23DBCDEC00908EF7 /* ContentView.swift */,
@@ -288,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInAppleExample/SignInAppleExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInAppleExample/Preview Content\"";
 				DEVELOPMENT_TEAM = FCZ6JTPKG7;
@@ -308,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInAppleExample/SignInAppleExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInAppleExample/Preview Content\"";
 				DEVELOPMENT_TEAM = FCZ6JTPKG7;
