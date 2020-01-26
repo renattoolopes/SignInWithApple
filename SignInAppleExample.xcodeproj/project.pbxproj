@@ -14,6 +14,7 @@
 		FD57680F23DBCDED00908EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD57680E23DBCDED00908EF7 /* Assets.xcassets */; };
 		FD57681223DBCDED00908EF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD57681123DBCDED00908EF7 /* Preview Assets.xcassets */; };
 		FD57681523DBCDEE00908EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD57681323DBCDEE00908EF7 /* LaunchScreen.storyboard */; };
+		FD57682623DE0DDD00908EF7 /* SignInAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FD57681423DBCDEE00908EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD57681623DBCDEE00908EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInAppleExample.entitlements; sourceTree = "<group>"; };
+		FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,10 @@
 		FD57680423DBCDEC00908EF7 /* SignInAppleExample */ = {
 			isa = PBXGroup;
 			children = (
+				FD57682423DE0DBE00908EF7 /* View */,
 				FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */,
 				FD57680523DBCDEC00908EF7 /* AppDelegate.swift */,
 				FD57680723DBCDEC00908EF7 /* SceneDelegate.swift */,
-				FD57680C23DBCDEC00908EF7 /* LoginView.swift */,
 				FD57680E23DBCDED00908EF7 /* Assets.xcassets */,
 				FD57681323DBCDEE00908EF7 /* LaunchScreen.storyboard */,
 				FD57681623DBCDEE00908EF7 /* Info.plist */,
@@ -78,6 +80,15 @@
 				FD57681123DBCDED00908EF7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD57682423DE0DBE00908EF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD57680C23DBCDEC00908EF7 /* LoginView.swift */,
+				FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD57680B23DBCDEC00908EF7 /* SignInAppleExample.xcdatamodeld in Sources */,
+				FD57682623DE0DDD00908EF7 /* SignInAppleButton.swift in Sources */,
 				FD57680623DBCDEC00908EF7 /* AppDelegate.swift in Sources */,
 				FD57680D23DBCDEC00908EF7 /* LoginView.swift in Sources */,
 				FD57680823DBCDEC00908EF7 /* SceneDelegate.swift in Sources */,
