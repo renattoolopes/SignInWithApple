@@ -34,7 +34,6 @@ extension SignInWithAppleDelegate: ASAuthorizationControllerDelegate {
     private func createAccount(credential: ASAuthorizationAppleIDCredential) {
         let userDefault = UserDefaults.init()
         userDefault.set(credential.user, forKey: "user")
-        userDefault.set(credential.fullName, forKey: "name")
         userDefault.set(credential.email, forKey: "email")
         completedSignIn(true)
         

@@ -330,12 +330,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SignInAppleExample/SignInAppleExample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SignInAppleExample/resources/SignInAppleExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInAppleExample/Preview Content\"";
 				DEVELOPMENT_TEAM = FCZ6JTPKG7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SignInAppleExample/Info.plist;
+				INFOPLIST_FILE = SignInAppleExample/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,12 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SignInAppleExample/SignInAppleExample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SignInAppleExample/resources/SignInAppleExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInAppleExample/Preview Content\"";
 				DEVELOPMENT_TEAM = FCZ6JTPKG7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SignInAppleExample/Info.plist;
+				INFOPLIST_FILE = SignInAppleExample/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
