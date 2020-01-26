@@ -15,6 +15,7 @@
 		FD57681223DBCDED00908EF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD57681123DBCDED00908EF7 /* Preview Assets.xcassets */; };
 		FD57681523DBCDEE00908EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD57681323DBCDEE00908EF7 /* LaunchScreen.storyboard */; };
 		FD57682623DE0DDD00908EF7 /* SignInAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */; };
+		FD57682B23DE10E700908EF7 /* SignInWithAppleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57682A23DE10E700908EF7 /* SignInWithAppleDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FD57681623DBCDEE00908EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInAppleExample.entitlements; sourceTree = "<group>"; };
 		FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleButton.swift; sourceTree = "<group>"; };
+		FD57682A23DE10E700908EF7 /* SignInWithAppleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +63,10 @@
 		FD57680423DBCDEC00908EF7 /* SignInAppleExample */ = {
 			isa = PBXGroup;
 			children = (
-				FD57682423DE0DBE00908EF7 /* View */,
-				FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */,
-				FD57680523DBCDEC00908EF7 /* AppDelegate.swift */,
-				FD57680723DBCDEC00908EF7 /* SceneDelegate.swift */,
-				FD57680E23DBCDED00908EF7 /* Assets.xcassets */,
-				FD57681323DBCDEE00908EF7 /* LaunchScreen.storyboard */,
-				FD57681623DBCDEE00908EF7 /* Info.plist */,
-				FD57680923DBCDEC00908EF7 /* SignInAppleExample.xcdatamodeld */,
+				FD57682923DE10CB00908EF7 /* delegate */,
+				FD57682823DE10AB00908EF7 /* resources */,
+				FD57682723DE109500908EF7 /* settings */,
+				FD57682423DE0DBE00908EF7 /* view */,
 				FD57681023DBCDED00908EF7 /* Preview Content */,
 			);
 			path = SignInAppleExample;
@@ -82,13 +80,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FD57682423DE0DBE00908EF7 /* View */ = {
+		FD57682423DE0DBE00908EF7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FD57681323DBCDEE00908EF7 /* LaunchScreen.storyboard */,
 				FD57680C23DBCDEC00908EF7 /* LoginView.swift */,
 				FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */,
 			);
-			path = View;
+			path = view;
+			sourceTree = "<group>";
+		};
+		FD57682723DE109500908EF7 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				FD57680723DBCDEC00908EF7 /* SceneDelegate.swift */,
+				FD57680523DBCDEC00908EF7 /* AppDelegate.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		FD57682823DE10AB00908EF7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD57680E23DBCDED00908EF7 /* Assets.xcassets */,
+				FD57680923DBCDEC00908EF7 /* SignInAppleExample.xcdatamodeld */,
+				FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */,
+				FD57681623DBCDEE00908EF7 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FD57682923DE10CB00908EF7 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FD57682A23DE10E700908EF7 /* SignInWithAppleDelegate.swift */,
+			);
+			path = delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD57680B23DBCDEC00908EF7 /* SignInAppleExample.xcdatamodeld in Sources */,
+				FD57682B23DE10E700908EF7 /* SignInWithAppleDelegate.swift in Sources */,
 				FD57682623DE0DDD00908EF7 /* SignInAppleButton.swift in Sources */,
 				FD57680623DBCDEC00908EF7 /* AppDelegate.swift in Sources */,
 				FD57680D23DBCDEC00908EF7 /* LoginView.swift in Sources */,
