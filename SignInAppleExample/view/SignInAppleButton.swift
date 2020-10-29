@@ -15,6 +15,5 @@ final class SignInAppleButton: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: UIViewRepresentableContext<SignInAppleButton>) {
-        
     }
 }

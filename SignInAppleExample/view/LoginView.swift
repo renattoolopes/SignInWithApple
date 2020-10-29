@@ -10,32 +10,54 @@ import SwiftUI
 import AuthenticationServices
 
 struct LoginView: View {
-    @State private var signInDelegate:SignInWithAppleDelegate?
+    
+    // MARK: - Private Properties
+    
+    @State private var signInDelegate: SignInWithAppleDelegate?
+    
+    
+    // MARK: - View
+    
     var body: some View {
         SignInAppleButton()
-        .frame(width: 200, height: 40)
-        .onTapGesture(perform: tapSignInAppleButton)
+            .frame(width: 200, height: 40)
+            .onTapGesture(perform: tapSignInAppleButton)
     }
+    
 }
 
+// MARK: - LoginView Extension
+
 extension LoginView {
+    
+    // MARK: - Private Methods
+    
     private func tapSignInAppleButton() {
-        let request = ASAuthorizationAppleIDProvider().createRequest()
+        let request: ASAuthorizationAppleIDRequest = ASAuthorizationAppleIDProvider().createRequest()
         request.requestedScopes = [.fullName, .email]
-        let controller = ASAuthorizationController.init(authorizationRequests: [request])
-        signInDelegate = SignInWithAppleDelegate.init(completedSignIn: { (success) in
-            if success {
-                //Update UI
-            } else {
-                //Update UI
+        
+        let controller: ASAuthorizationController = ASAuthorizationController(authorizationRequests: [request])
+        
+        signInDelegate = SignInWithAppleDelegate(completedSignIn: { (result) in
+            switch result {
+            case .success(let text):
+                print(text)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         })
+        
         controller.delegate = signInDelegate
         controller.performRequests()
     }
 }
 
+// MARK: - LoginView Previews
+
 struct LoginView_Previews: PreviewProvider {
+    
+    // MARK: - Previews
+    
     static var previews: some View {
         LoginView()
     }

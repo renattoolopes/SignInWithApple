@@ -63,10 +63,10 @@
 		FD57680423DBCDEC00908EF7 /* SignInAppleExample */ = {
 			isa = PBXGroup;
 			children = (
-				FD57682923DE10CB00908EF7 /* delegate */,
-				FD57682823DE10AB00908EF7 /* resources */,
-				FD57682723DE109500908EF7 /* settings */,
-				FD57682423DE0DBE00908EF7 /* view */,
+				FD57682923DE10CB00908EF7 /* Delegate */,
+				FD57682823DE10AB00908EF7 /* Resources */,
+				FD57682723DE109500908EF7 /* Settings */,
+				FD57682423DE0DBE00908EF7 /* View */,
 				FD57681023DBCDED00908EF7 /* Preview Content */,
 			);
 			path = SignInAppleExample;
@@ -80,26 +80,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FD57682423DE0DBE00908EF7 /* view */ = {
+		FD57682423DE0DBE00908EF7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FD57681323DBCDEE00908EF7 /* LaunchScreen.storyboard */,
 				FD57680C23DBCDEC00908EF7 /* LoginView.swift */,
 				FD57682523DE0DDD00908EF7 /* SignInAppleButton.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
-		FD57682723DE109500908EF7 /* settings */ = {
+		FD57682723DE109500908EF7 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				FD57680723DBCDEC00908EF7 /* SceneDelegate.swift */,
 				FD57680523DBCDEC00908EF7 /* AppDelegate.swift */,
 			);
-			path = settings;
+			path = Settings;
 			sourceTree = "<group>";
 		};
-		FD57682823DE10AB00908EF7 /* resources */ = {
+		FD57682823DE10AB00908EF7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				FD57680E23DBCDED00908EF7 /* Assets.xcassets */,
@@ -107,15 +107,15 @@
 				FD57682323DE0CDB00908EF7 /* SignInAppleExample.entitlements */,
 				FD57681623DBCDEE00908EF7 /* Info.plist */,
 			);
-			path = resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		FD57682923DE10CB00908EF7 /* delegate */ = {
+		FD57682923DE10CB00908EF7 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				FD57682A23DE10E700908EF7 /* SignInWithAppleDelegate.swift */,
 			);
-			path = delegate;
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
